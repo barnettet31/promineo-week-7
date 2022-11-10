@@ -19,44 +19,67 @@
       /></a>
       <nav class="flex items-center">
         <ul class="nav_list flex gap-4">
-          <li class="nav_item"><a class="nav_link" href="./docs/ goku.html">Goku</a></li>
-          <li class="nav_item"><a class="nav_link" href="./docs/ gohan.html">Gohan</a></li>
-          <li class="nav_item"><a class="nav_link" href="./docs/ piccolo.html">Piccolo</a></li>
-          <li class="nav_item"><a class="nav_link" href="./docs/ vegeta.html">Vegeta</a></li>
+          <li class="nav_item">
+            <a class="nav_link" href="./docs/goku.html">Goku</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" href="./docs/gohan.html">Gohan</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" href="./docs/piccolo.html">Piccolo</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" href="./docs/vegeta.html">Vegeta</a>
+          </li>
         </ul>
       </nav>
     </header>
-    <main>
-      <h1>The Z Fighters</h1>
-      <h2>What are the Z fighters?</h2>
-      <p>
-        The Z fighters are a group of devoted martial artists that dedicate
-        their lives to their own self improvement, and the protection of Earth
-        from anyone that would do it harm!
-      </p>
-      <img src="./graphics/z_fighters.webp" alt="The Z Fighters" />
-      <p>
-        They are composed of some of the fiercest and greatest fighters the
-        world has ever seen
-      </p>
-      <p>Vote on which one you think is the best below!</p>
-      <form action="/" method="Post">
-        <div class="">
-          <label for="Name">Name:</label>
-          <input type="text" id="Name" placeholder="What is your name" />
+    <main class="px-4">
+      <div class="flex hero gap-4">
+        <img
+          src="./graphics/z_fighters.webp"
+          alt="The Z Fighters"
+          class="w-1/2 max-w-8" />
+        <div class=".w-1/2">
+          <h1>The Z Fighters</h1>
+          <h2>What are the Z fighters?</h2>
+          <p>
+            The Z fighters are a group of devoted martial artists that dedicate
+            their lives to their own self improvement, and the protection of
+            Earth from anyone that would do it harm!
+          </p>
         </div>
-        <div class="">
-          <label for="">Favorite Z Fighter</label>
-          <select name="favorite-fighter" id="fighter">
-            <option value="gohan">Gohan</option>
-            <option value="gohan">Vegeta</option>
-            <option value="gohan">Piccolo</option>
-            <option value="gohan">Goku</option>
-          </select>
+      </div>
+      <div class="flex gap-4 justify-around form-section">
+        <div class="flex justify-center flex-col">
+          <p>
+            They are composed of some of the fiercest and greatest fighters the
+            world has ever seen
+          </p>
+          <p>Vote on which one you think is the best in this form!</p>
         </div>
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
-      </form>
+        <form id="myChoiceForm" class="flex flex-col gap-4 py-4 self-end" action="/" method="Post">
+          <div class="flex flex-col gap-2">
+            <label for="Name">Name:</label>
+            <input
+              type="text"
+              id="Name"
+              name="username"
+              placeholder="What is your name" />
+          </div>
+          <div class="flex flex-col gap-2">
+            <label for="">Favorite Z Fighter</label>
+            <select name="favorite" id="fighter">
+              <option value="gohan">Gohan</option>
+              <option value="gohan">Vegeta</option>
+              <option value="gohan">Piccolo</option>
+              <option value="gohan">Goku</option>
+            </select>
+          </div>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </form>
+      </div>
     </main>
     <script src="./script.js"></script>
   </body>

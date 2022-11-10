@@ -158,7 +158,6 @@ button{
 }
 .hero img{
   border-radius:5px;
-  border:2px solid var(--fc-blue);
 }
 
 #myChoiceForm{
@@ -166,6 +165,9 @@ button{
 }
 
 /*utils*/
+.bg-white{
+  background-color: white;
+}
 .flex{
     display: flex;
 }
@@ -193,6 +195,9 @@ button{
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
+.mb-4{
+  margin-bottom:1em;
+}
 
 .items-center{
     align-items: center;
@@ -206,15 +211,35 @@ button{
 .w-1\/2{
     width:50%;
 }
+.max-w-1\/2{
+  max-width: 50%;
+}
 .max-w-8{
   max-width:20rem;
 }
-
+.rounded{
+  border-radius:5px;
+}
+.border-blue{
+  border:2px solid var(--fc-blue);
+}
+.fs-bigger{
+  font-size:1.5rem;
+}
+.text-underline{
+  text-decoration: underline;
+}
+.text-blue{
+  color:var(--fc-blue);
+}
 @media (max-width: 1000px){
   .hero{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .hero-text{
+    max-width:100%;
   }
   .form-section{
     flex-direction: column;

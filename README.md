@@ -57,6 +57,23 @@ I did that like this:
 }
 ```
 
+Oh also I decided to make the form actually submittable! With this little javascript function: 
+
+```js
+const choiceForm = document.querySelector("#myChoiceForm");
+function convertFormDataToObject (form){
+    const formData = new FormData(form);
+    return Object.fromEntries(formData);
+}
+choiceForm.addEventListener('submit', (e)=>{
+    e.preventDefault();
+    const myData = convertFormDataToObject(e.target);
+    console.log(myData);
+    alert(`Here I converted your form to json for you: ${JSON.stringify(myData)}`);
+    e.target.reset();
+   
+})
+
 
 
 

@@ -1,1 +1,161 @@
-/* placeholder for week 7* /
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background: rgb(223,58,0);
+background: radial-gradient(circle, rgba(223,58,0,1) 0%, rgba(162,42,4,1) 52%, rgba(215,57,0,1) 100%);
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* done resets */
+:root{
+    --fc-blue:#028dbd;
+    --fc-yellow:#f1da2b;
+
+}
+body{ 
+    font-family: 'Marhey', cursive;
+}
+a{
+    color:inherit;
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+
+}
+.current{
+    color:var(--fc-yellow);
+}
+.logo{
+    height:50px;
+    width:50px;
+}
+.nav_list{
+    align-items: center;
+}
+.nav_item a{
+    transition: all ease-in-out 0.2s;
+    font-weight: 700;
+}
+.nav_item a:hover{
+ color:var(--fc-yellow);
+ opacity:0.7;
+
+}
+.nav_item{
+    position: relative;
+}
+.nav_item::after{
+    content: "";
+    background-image: url('./graphics/Flying_Nimbus.webp');
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -17px;
+    left: 0;
+    height: 19px;
+    width: 100%;
+    transform: translateX(0);
+    visibility: hidden;
+    transform-origin: left;
+    /* background-color: var(--fc-yellow); */
+    transition: transform linear 0.3s;
+}
+.nav_item:hover::after{
+    visibility: visible;
+    transform: translateX(70%);
+}
+
+
+/*utils*/
+.flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.gap-4{
+    gap:1rem;
+}
+
+.px-4{
+    padding-left:1rem;
+    padding-right:1rem;
+}
+.py-4{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.items-center{
+    align-items: center;
+}

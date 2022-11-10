@@ -27,7 +27,9 @@ First I started with a picture of what I wanted the page structure to look like.
 
 ![](./design.jpg)
 
+Then I layed out the basic HTML. Honestly this project was so easy that I had to make it at least a little presentable so I added some styles...
 
+Then I kinda wanted to give the page some actual functionality (the mobile site) so I may have added some JS to the page as well 
 
 ### What I learned
 

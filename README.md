@@ -20,7 +20,7 @@ Coding Steps:
 
 
 ### Links
-- Live Site URL: [Live Site On GitHub Pages](https://barnettet31.github.io/promineo-week-6/)
+- Live Site URL: [Live Site On GitHub Pages](https://barnettet31.github.io/promineo-week-7/)
 
 ## My process
 First I started with a picture of what I wanted the page structure to look like. Here's a picture of that: 

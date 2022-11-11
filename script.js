@@ -6,8 +6,7 @@ function convertFormDataToObject (form){
 choiceForm.addEventListener('submit', (e)=>{
     e.preventDefault();
     const myData = convertFormDataToObject(e.target);
-    console.log(myData);
     alert(`Here I converted your form to json for you: ${JSON.stringify(myData)}`);
     e.target.reset();
    
-})
+});
